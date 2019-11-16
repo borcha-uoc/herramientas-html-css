@@ -1,5 +1,6 @@
-@use '../node_modules/bootstrap/dist/css/bootstrap.css';
+@use '/node_modules/bootstrap/dist/css/bootstrap.css';
 
-.prueba {
-  color: red;
+body {
+  background: url(/img/greyzz.png);
+  margin-top: 3.5rem;
 }
