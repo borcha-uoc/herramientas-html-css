@@ -20,5 +20,10 @@
     "postcss-modules": "^1.4.1",
     "rimraf": "^3.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0",
+    "sass": "^1.23.5"
+  }
 }
