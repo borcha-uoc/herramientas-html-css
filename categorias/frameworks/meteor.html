@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Bruno Orcha García">
+    <title>Enciclopedia frontend - Lenguajes</title>
+    <link rel="stylesheet" type="text/css" href="/scss/main.scss">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="/">Enciclopedia fronted</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+    <li class="breadcrumb-item"><a href="/categorias/frameworks/index.html">Frameworks</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Meteor</li>
+  </ol>
+</nav>
+
+<main role="main">
+  <div class="container">
+    <h1>Meteor</h1>
+
+<p>Meteor JS es una nueva infraestructura de JavaScript que tiene como objetivo automatizar y simplificar el desarrollo de aplicaciones web que actúan en tiempo real. Usa la comunicación en tiempo real mediante un protocolo llamado Distributed Data Protocol (DDP), que es soportado por navegadores modernos que usan WebSockets o en navegadores antigüos que soporten “long polling”. En ambos casos, la comunicación navegador-servidor es transparente para el usuario.
+</p>
+<img src="/img/meteor.png">
+<h2>¿Qué lo hace especial?</h2>
+<p>Para entender mejor, les propongo hacer un ejercicio mental. Imaginemos que abrimos dos ventanas del explorador de archivos de nuestra pc mostrando la misma carpeta. Ahora borramos un archivo en una de las dos ventanas. ¿Habrá desaparecido en la otra? Para entender mejor, les propongo hacer un ejercicio mental. Imaginemos que abrimos dos ventanas del explorador de archivos de nuestra pc mostrando la misma carpeta. Ahora borramos un archivo en una de las dos ventanas. ¿Habrá desaparecido en la otra? Cuando modificamos algo en nuestro sistema de archivos local, el cambio se aplica en todas partes sin necesidad de actualizar o callbacks. Simplemente sucede. Ahora pensamos que sucedería si esta misma situación se diera en la web. Por ejemplo, digamos que abrimos el mismo sitio en WordPress en dos ventanas del navegador y creamos un post en una de ellas. A diferencia del escritorio, la otra ventana no reflejará el cambio a menos que la recargues o actualices el navegador. Nos hemos acostumbrado a la idea de que un sitio web es algo con lo que solo te comunicas por momentos o sólo cuando hacemos una acción. Meteor JS es parte de una nueva ola de frameworks y tecnologías que buscan desafiar el status quo haciendo webs reactivas y en tiempo real.
+</p>
+<h2>Un paso más allá en bases de datos.</h2>
+<p>Meteor proporciona varias ventajas para el usuario además de su reactividad. imaginen que Meteor JS brinda dos bases de datos: una base de datos del lado del cliente (cache) y una base de datos MongoDB en el servidor. Cuando un usuario modifica algún dato—haciendo clic en Save, por ejemplo,—el código JavaScript que se ejecuta en el navegador actualiza la base de datos en MongoDB local y luego realiza una solicitud de DDP al servidor. El código actúa de inmediato como si la operación hubiera sido exitosa ya que no necesita esperar la respuesta por el servidor. Mientras tanto, el servidor se actualiza en segundo plano. Si se produce un error en la operación del servidor o si devuelve un resultado inesperado, el código JavaScript del lado del cliente se reajusta inmediatamente según los datos devueltos recientemente del servidor. Este ajuste se denomina compensación de latencia y genera una cantidad de velocidad adicional que el usuario percibe. Este proceso de actualización y comunicación con la base de datos, produce un salto de cuántico en la performance hasta ahora conocida por los usuarios web. Ya que dicho de otro modo, cuando el usuario actualiza un dato, lo está actualizando localmente y en segundo plano con el servidor, hecho que con tecnologías convencionales (php, .net) ocurre de forma secuencial.</p>
+<h2>Isomórfico</h2>
+<p>Otra característica importante es que el código que se ejecuta en el server es JavaScript al igual que en el cliente. Como Meteor JS usa Node.js, se utiliza JavaScript en el cliente y en el servidor. Y más aún, Meteor es capaz de compartir código entre ambos entornos. Utilizando la técnica de “long pooling” cada vez que un cliente contacta a un servidor Meteor, deja abierta una petición extra con el cliente reteniendo indefinidamente la respuesta hasta tener algo que enviarle. De esta forma mantiene la Reactividad del sistema. Para saber más acerca de los desarrollos de Tooit en Meteor JS, click aquí.</p>
+
+<p>Fuente original: <a href="https://www.tooit.com/es/meteor-js-que-es/">https://www.tooit.com/es/meteor-js-que-es/</a></p>
+<hr>
+    <p>Otros artículos de la categoría <em>Frameworks</em></p>
+
+    <div class="list-group">
+       <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <h5 class="mb-1">Next.js</h5>
+        <p class="mb-1">Es un framework basado en React, Webpack y Babel en el que se integran con un conjunto de herramientas que nos permite crear aplicaciones estática, con renderizado en el lado servidor con un gran rendimiento de forma muy simple y con una configuración mínima.</p>
+      </a>
+       <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <h5 class="mb-1">Ember.js</h5>
+        <p class="mb-1">Ember es un framework front-end JavaScript diseñador para ayudar a construri website con interacciones de usuarios complejas. Aporta funcionalidades a los desarrolladores para poder gestioanr la complejidad de las modernas aplicaciones web.</p>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <h5 class="mb-1">Vue.js</h5>
+        <p class="mb-1">Vue.js is un framework JavaScript basado en el patrón Model–view–viewmodel para construir interfaces de usuario y Single-Page-Applications. Al contrario que otros framework monolíticos, Vue está diseñado desde el principio para ser adoptable de forma incremental.</p>
+      </a>
+    </div>
+  </div>
+</main>
+<hr>
+
+<footer class="container">
+  <p>&copy; UOC - Bruno Orcha García - 2019</p>
+</footer>
+    <script src="/index.js"></script>
+</body>
+</html>
