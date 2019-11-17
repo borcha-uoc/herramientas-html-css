@@ -46,16 +46,16 @@
 
 <p>Podemos crear condiciones con intervalos y código condicional:</p>
 
-<pre>
+<pre><code class="coffeescript">
 mass = 72
 height = 1.78
 BMI = mass / height**2
 alert 'You are healthy!' if 18.5 < BMI < 25
-</pre>
+</code></pre>
 
 <p>Para calcular el máximo común divisor de dos enteros usando el algoritmo de euclides, en JavaScript se necesita normalmente un bucle:</p>
 
-<pre>
+<pre><code class="javascript">
 gcd = (x, y) => {
   do {
     z = x % y
@@ -64,15 +64,15 @@ gcd = (x, y) => {
   } while (y !== 0)
   return x
 }
-</pre>
+</code></pre>
 
 <p>Sin embargo con CoffeeScript podemos usar until y asignación destructurada en su lugar:</p>
 
-<pre>
+<pre><code class="coffeescript">
 gcd = (x, y) ->
   [x, y] = [y, x%y] until y is 0
   x
-</pre>
+</code></pre>
 
 <p>Fuente original: <a href="https://es.wikipedia.org/wiki/CoffeeScript">https://es.wikipedia.org/wiki/CoffeeScript</a></p>
 
