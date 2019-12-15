@@ -29,6 +29,15 @@ footer a {
   color: white;
 }
 
+a.list-group-item, .categorias a {
+  transition: 0.3s ease;
+}
+
+a.list-group-item:hover, .categorias a:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 16px 0 rgba(0,0,0,0.2);
+}
+
 .list-group-item img {
     width: 100px;
     float: left;
