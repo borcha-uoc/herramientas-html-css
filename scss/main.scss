@@ -5,6 +5,14 @@ body {
   margin-top: 3.5rem;
 }
 
+.jumbotron {
+  padding: 0px 0px 2rem 0px;
+}
+
+.jumbotron > img {
+  clip-path: ellipse(90% 50% at 50% 40%);
+}
+
 footer {
 	margin-top: 1rem;
   padding: 2.5rem 0;
