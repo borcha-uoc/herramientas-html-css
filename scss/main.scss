@@ -6,11 +6,19 @@ body {
 }
 
 footer {
-    padding: 2.5rem 0;
-    color: #999;
+	margin-top: 1rem;
+  padding: 2.5rem 0;
+  color: white;
 	text-align: center;
 	background-color: #727e8a;
+  background-image: url(/img/circuito.png);
+  background-position: center;
 	border-top: .05rem solid #343a40;
+  clip-path: ellipse(70% 60% at 50% 60%);
+}
+
+footer a {
+  color: white;
 }
 
 .list-group-item img {
