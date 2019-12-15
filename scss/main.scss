@@ -13,6 +13,11 @@ footer {
 	border-top: .05rem solid #343a40;
 }
 
+.list-group-item img {
+    width: 100px;
+    float: left;
+    margin-right: 1em;
+}
 
 @media (min-width: 575px) and (max-width: 767px) {
   .container.categorias .col-md-4 {
