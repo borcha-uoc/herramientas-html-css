@@ -19,6 +19,10 @@ footer {
     margin-right: 1em;
 }
 
+picture img {
+  width: 100%;
+}
+
 @media (min-width: 575px) and (max-width: 767px) {
   .container.categorias .col-md-4 {
   	padding-left: 190px;
