@@ -13,3 +13,20 @@ footer {
 	border-top: .05rem solid #343a40;
 }
 
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .container.categorias .col-md-4 {
+  	padding-left: 190px;
+  }
+  .container.categorias .col-md-4 img {
+    float: left;
+    margin-left: -175px;
+    width: 160px;
+  }
+}
+
+@media (max-width: 574px) {
+  .container.categorias .col-md-4 img {
+  	max-width: 300px;
+  }
+}
